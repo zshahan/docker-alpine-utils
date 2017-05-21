@@ -5,6 +5,8 @@ MAINTAINER Zack Shahan "z.shahan@gmail.com"
 RUN apk add --no-cache --virtual .build-deps \
         git \
         unzip \
+        bash \
+        openssh \
         && apk del .build-deps
         
 USER 1001
