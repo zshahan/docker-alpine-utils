@@ -2,12 +2,11 @@ FROM alpine:3.5
 
 MAINTAINER Zack Shahan "z.shahan@gmail.com"
 
-RUN apk add --no-cache --virtual .build-deps \
+RUN apk add --no-cache \
         git \
         unzip \
         bash \
-        openssh \
-        && apk del .build-deps
+        openssh
         
 USER 1001
 
