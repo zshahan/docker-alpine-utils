@@ -6,7 +6,8 @@ RUN apk add --no-cache \
         git \
         unzip \
         bash \
-        openssh
+        openssh \
+        curl
         
 USER 1001
 
