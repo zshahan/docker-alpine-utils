@@ -8,6 +8,7 @@ RUN apk add --no-cache \
         bash \
         openssh \
         openssl \
+        jq \
         curl
         
 USER 1001
