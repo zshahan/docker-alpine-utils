@@ -2,6 +2,8 @@ FROM alpine:3.5
 
 MAINTAINER Zack Shahan "z.shahan@gmail.com"
 
+ENV uid 1001
+
 RUN apk add --no-cache \
         git \
         unzip \
@@ -9,8 +11,9 @@ RUN apk add --no-cache \
         openssh \
         openssl \
         jq \
-        curl
+        curl \
+        wget
         
-USER 1001
+USER $uid
 
 CMD ["git", "--version"]
